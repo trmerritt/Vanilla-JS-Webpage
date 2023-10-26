@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Vanilla JS Webpage</title>
+  </head>
+  <body>
+    <header>
+    <h1>Bulk Order Calculator</h1>
+    </header>
+    <h2>Use the calculator below to calculate the total of your order, then hit <a href="#submit">Purchase</a> if you would like to proceed with the purchase!</h2>
+    <p id="intro">Our envelopes are all the same size (A9) and colours are random, meaning you will recieve various shades at random. This size is suitable for greeting cards or party invitations.</p>
+    <div id="img-container">
+    <img id="main-image" src="https://cdn.pixabay.com/photo/2017/08/03/09/50/envelope-2575253_1280.jpg" alt="A display of envelopes in different colours.">
+      </div>
+    <div>
+      <form method="POST" action="sjsjsjsj">
+        <fieldset>
+          <legend>Enter how many envelopes you want and let us calculate ALL the costs!</legend>
+          <p>Note: Mininum number of envelopes per order is 100, and the maximum is 1000.</p>
+          <label for="usertotal">How many envelopes? <input id="usertotal" type="number" name="usertotal" max="1000" min="100" required onclick="orderCalculation()"></label>
+          <input type="hidden" name="bulkorder" value="colouredenvelopes">
+          <label for="calculate"><button id="calculate" type="button">Calculate Order Cost</button></label>
+          <p>Description of current order: </p>
+          <p>Total number of envelopes: <span id="numofenvelopes"></span></p>
+          <p>Total cost of envelopes pumpkins: <span id="envelopetotal"></span></p>
+          <p>Value Added Tax: <span id="vat"></span></p>
+          <p>Delivery charge for this order: <span id="delivery"></span></p>
+          <p>Total cost of order (VAT and delivery included): <span id="ordertotal"></span></p>
+          <label for="submit"><button id="submit" type="submit" name="action" value="ordersubmitted" onclick="greetFunc()">PURCHASE</button></label>
+        </fieldset>
+      </form>
+    </div>
+    <pre>
+    Take a look at other products in our catalogue!
+    
+    You can see our other popular bulk-buy items in the slideshow below...</pre>
+    <div id="container">
+      <img id="pic" src="https://cdn.pixabay.com/photo/2019/03/03/11/34/colored-pencils-4031668_1280.jpg" alt="A slideshow of images of generic stationary office supplies in bulk amounts">
+    </div>
+    <button id="nextbutton" onclick="PictureSlideshow()">Next Image</button>
+    <footer><p>This webpage was created for education/practice purposes only<p>Copyright 2023&copy; by <a href="https://codepen.io/_trm_" target="on_blank">_trm_</a></p>
+        </footer>
+        <script src="script.js"></script>
+        </body>
+      </html>
+  
