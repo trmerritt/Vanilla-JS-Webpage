@@ -1,0 +1,72 @@
+#main-image {
+  width: 100vw;
+  padding-bottom: 10vh;
+  padding-top: 10vh;
+}
+
+header, h2, #intro {
+  text-align: center;
+}
+
+span {
+  font-weight: bold;
+}
+
+a:link {
+  color: #4FC3F7;
+}
+a:visited {
+  color: gray;
+}
+
+a:hover {
+  color: orange;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#pic {
+  width: 50%;
+  height: 74%;
+  object-fit: cover;
+}
+
+#nextbutton {
+  margin-left: 45%;
+  margin-top: 4vh;
+}
+
+footer {
+  padding-top: 20vh;
+  text-align: center;
+}
+
+pre {
+  padding-top: 10vh;
+  padding-bottom: 5vh;
+  font-weight: bold;
+}
+
+fieldset {
+  padding: 1vw
+}
+
+legend {
+  font-weight: bold;
+}
+
+#submit {
+  margin: 1vh;
+}
+
+#submit:hover {
+  background-color: lightblue;
+}
+
+button:hover {
+  background-color: lightblue;
+}
